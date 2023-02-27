@@ -41,19 +41,20 @@ go version
 ```
 
 #### 2. Start Service 
-cd to project and run with this command</br>
+Run with this command</br>
 _Note: This service require_ ***redis*** </br>
 ```bash
 sh ./initialize.sh
 ```
  **OR**
 
- ```bash
+```bash
 make initialize
 ```
 
-**OR** </br>
-```
+**OR**
+
+```bash
 go mod tidy
 go get -v
 go run main.go
