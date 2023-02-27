@@ -1,0 +1,26 @@
+version: "3.9"
+services:
+  redis:
+    image: redis
+    container_name: redis
+    restart: always
+    ports:
+       - "6379:6379"
+  goapp:
+    build: ./restaurants-service
+    image: goapp
+    container_name: goappdo
+    restart: always
+    ports:
+      - "8443:8443"
+    depends_on:
+      - redis
+  web:
+    build: ./restaurants-app
+    image: restaurants-app
+    container_name: restaurants-app
+    environment:
+      - NEXT_PUBLIC_BASE_URL=http://localhost:4000
+    restart: always
+    ports:
+      - "3000:3000"
