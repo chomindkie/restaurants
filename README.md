@@ -42,7 +42,7 @@ go version
 
 #### 2. Start Service 
 cd to project and run with this command</br>
->note: This service require redis </br>
+_Note: This service require_ ***redis*** </br>
 ```bash
 sh ./initialize.sh
 ```
