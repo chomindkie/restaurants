@@ -12,25 +12,24 @@ $ docker-compose up -d
 Open [http://localhost:3000](http://localhost:3000) with your browser to see. 
 
 ## 2. For run manual each service 
----
-**⭐️Frontend** [restaurants-app](https://bitbucket.org/chomind/restaurants-app/src/master/)<br/>
+### ⭐️Frontend [restaurants-app](https://bitbucket.org/chomind/restaurants-app/src/master/)<br/>
 ```shell
 $ git clone git@bitbucket.org:chomind/restaurants-app.git
 ```
 
-#### For start [restaurants-app](https://bitbucket.org/chomind/restaurants-app/src/master/) :dash: ####
+#### For start [restaurants-app](https://bitbucket.org/chomind/restaurants-app/src/master/) :dash:
 Please run following command
 ```bash
 npm run production
 ```
 
-
-**⭐️Backend** [restaurants-service](https://bitbucket.org/chomind/restaurants-service/src/master/)<br/>
+---
+### ⭐️Backend [restaurants-service](https://bitbucket.org/chomind/restaurants-service/src/master/)<br/>
 ```shell
 $ git clone git@bitbucket.org:chomind/restaurants-service.git
 ```
 
-#### For start [restaurants-service](https://bitbucket.org/chomind/restaurants-service/src/master/) :dash: ####
+#### For start [restaurants-service](https://bitbucket.org/chomind/restaurants-service/src/master/) :dash:
 
 #### 1. Install Go
 ```bash
@@ -42,8 +41,8 @@ go version
 ```
 
 #### 2. Start Service 
-cd to project and run with this command<br/>
->note: This service require redis 
+cd to project and run with this command</br>
+>note: This service require redis </br>
 ```bash
 sh ./initialize.sh
 ```
